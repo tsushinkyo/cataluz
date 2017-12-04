@@ -45,6 +45,7 @@ import {
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatListModule,
     MatSidenavModule,
     MatCheckboxModule,
     MatButtonModule,

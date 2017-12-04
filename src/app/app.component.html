@@ -1,16 +1,32 @@
+<mat-toolbar color="primary">
+    <span id="tittle">Cataluz.cat</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="example-icon">menu</mat-icon></button>
+  </mat-toolbar>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav fixedInViewport  #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+  <mat-sidenav mode="over"   #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
                (closed)="events.push('close!')">
-    Sidenav content
+    <div class="abcde">
+      <mat-nav-list>
+          <mat-list-item> <h4>Secciones</h4> </mat-list-item>
+          <mat-list-item> Tierra </mat-list-item>
+          <mat-list-item> Vivencias </mat-list-item>
+          <mat-list-item> Homenaje </mat-list-item>
+          <mat-list-item> Sentimientos </mat-list-item>
+         </mat-nav-list>
+    </div>
   </mat-sidenav>
-
-  <mat-sidenav-content>
-      <mat-toolbar color="primary">
-          <span>My Application</span>
-          <span class="example-spacer"></span>
-          <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="example-icon">menu</mat-icon></button>
-        </mat-toolbar>
+  <mat-sidenav-content class="content">
         <button mat-button>Click me!</button>
-    
+        <div class="view">
+            <div class="plane main">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
